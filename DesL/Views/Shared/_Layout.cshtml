@@ -1,0 +1,27 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DesL | List of 20th Century Designers</title>
+    <link rel="stylesheet" href="~/css/site.css" />
+</head>
+<body>
+    <div class="wrapper">
+        <div class="col-left">
+            <header>
+                List of<br />
+                20th Century<br />
+                Designers
+            </header>
+            <a asp-action="Index">home</a>
+            <a asp-action="Create">add new</a>
+        </div>
+        <div class="col-right">
+            <header>
+            </header>
+            @RenderBody()
+        </div>
+    </div>
+</body>
+</html>

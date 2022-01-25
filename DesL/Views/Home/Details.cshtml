@@ -1,0 +1,11 @@
+﻿@model Designer
+@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+<div class="details">
+    <div class="full-name">@Model.FirstName @Model.LastName</div>
+    <div class="lifetime">@Model.Lifetime</div>
+    <div class="cv">@Html.Raw(Model.CV.Replace("\n", "<br />"))</div>
+</div>

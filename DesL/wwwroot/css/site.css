@@ -1,0 +1,151 @@
+﻿@font-face {
+    font-family: Reg;
+    src: url(../fonts/vfutura-regular.ttf) format('truetype'), url(../fonts/vfutura-regular.woff) format('woff');
+}
+
+@font-face {
+    font-family: Med;
+    src: url(../fonts/vfutura-medium.ttf) format('truetype'), url(../fonts/vfutura-medium.woff) format('woff');
+}
+
+*{
+    padding:0;
+    margin:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-size:24px;
+    font-family:Reg;
+    line-height:32px;
+}
+
+a{
+    color:inherit;
+}
+
+.wrapper{
+    display:flex;
+}
+
+.col-left{
+    min-width:300px;
+    max-width:300px;
+    min-height:100vh;
+    border-right:1px solid #ccc;
+}
+
+.col-left header{
+    height:150px;
+    padding:30px;
+    font-size:16px;
+    font-family:Med;
+    line-height:24px;
+    border-bottom:1px solid #ccc;
+}
+
+.col-left a{
+    display:block;
+    padding:0 0 0 20px;
+    font-size:16px;
+    line-height:32px;
+}
+
+.col-right {
+    min-width: calc(100% - 300px);
+    max-width: calc(100% - 300px);
+}
+
+.col-right header{
+    height:150px;
+    border-bottom:1px solid #ccc;
+}
+
+.col-right table{
+    width:100%;
+    font-size:24px;
+    line-height:32px;
+    border-collapse:collapse;
+}
+
+.col-right table th{
+    font-family:Med;
+    font-weight:normal;
+    text-align:left;
+}
+
+.col-right .details{
+    width:70%;
+    padding:0 0 40px 0;
+    margin:0 auto;
+}
+
+.details .full-name{
+    font-family:Med;
+}
+
+.details .lifetime{
+    color:#aaa;
+}
+
+.col-right .create, .col-right .delete {
+    width: 70%;
+    padding: 0 0 40px 0;
+    margin: 0 auto;
+}
+
+.create input, .create textarea, .delete input, .delete textarea{
+    display:block;
+    width:100%;
+    margin:24px 0 0 0;
+    font-size:24px;
+    font-family:Reg;
+    border:none;
+    border-bottom:1px solid #ccc;
+}
+
+.create textarea, .delete textarea {
+    height:200px;
+}
+
+.create button, .delete button {
+    display: block;
+    margin: 24px 0 0 0;
+    font-size: 24px;
+    font-family: Reg;
+}
+
+@media screen and (min-width:801px) and (max-width:1024px){
+    .col-left{
+        min-width:160px!important;
+        max-width:160px!important;
+    }
+
+    .col-right {
+        min-width: calc(100% - 160px)!important;
+        max-width: calc(100% - 160px)!important;
+    }
+}
+
+@media screen and (max-width:800px){
+    .col-right table{
+        font-size:12px!important;
+        line-height:21px!important;
+    }
+}
+
+::-webkit-input-placeholder {
+    /* Chrome/Opera/Safari */
+    color: #000;
+}
+
+::-moz-placeholder {
+    /* Firefox 19+ */
+    color: #000;
+    opacity: 1;
+}
+
+:-ms-input-placeholder {
+    /* IE 10+ */
+    color: #000;
+}
